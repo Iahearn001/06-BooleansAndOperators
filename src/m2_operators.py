@@ -3,7 +3,7 @@ t1 = "fox"
 t2 = "cat"
 
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   Write each of the functions below (each that takes two parameters and uses
 #   the appropriate operator from the reading) that simply returns the boolean
@@ -21,9 +21,37 @@ t2 = "cat"
 #   
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def main(x, y):
+    print(bool(x))
+    print(bool(y))
+main(5, 7)
+
+def equal(x, y):
+    print(bool(x == y))
+equal(5, 5)
+
+def not_equal(x, y):
+    print(bool(x != y))
+not_equal(5,3)
+
+def greater_than(x, y):
+    print(bool(x > y))
+greater_than(5, 3)
+
+def less_than(x, y):
+    print(bool(x < y))
+less_than(3, 4)
+
+def greater_than_or_equal_to(x, y):
+    print(bool(x >= y))
+greater_than_or_equal_to(4, 3)
+
+def less_than_or_equal_to(x, y):
+    print(bool(x <= y))
+less_than_or_equal_to(3, 3)
 
 ###############################################################################
-# TODO: 1. (2 pts)
+# DONE: 1. (2 pts)
 #
 #   Write a line of code that returns True if the string
 #       t1 (defined above)
@@ -41,7 +69,8 @@ t2 = "cat"
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(t1 in txt)
+print(t2 in txt)
 ###############################################################################
 # TODO: 1. (1 pt)
 #
@@ -53,3 +82,4 @@ t2 = "cat"
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+print(t1 is not t2)
